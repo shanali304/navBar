@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Responsive Drop-down Menu Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    
+    
+   
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./saylani logo.png" alt="logo" class="responsive">
+      </div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <label for="btn-1" class="show">Features +</label>
+          <a href="#">About</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a href="#">Rikshaw</a></li>
+            <li><a href="#">Rashan</a></li>
+            <li><a href="#">Flood Relief</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="btn-2" class="show">Services +</label>
+          <a href="#">Services</a>
+          <input type="checkbox" id="btn-2">
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Auto Cad</a></li>
+            <li>
+              <label for="btn-3" class="show">More +</label>
+              <a href="#">More <span class="fa fa-plus"></span></a>
+              <input type="checkbox" id="btn-3">
+              <ul>
+                <li><a href="#">Artifical</a></li>
+                <li><a href="#">Mobile App</a></li>
+                <li><a href="#">Ms Word</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+
+  </body>
+</html>
